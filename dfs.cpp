@@ -1,12 +1,12 @@
-int N=100;
-int color[100];
-bool A[100][100];
+int const MAXV = 100;
+int color[MAXV];
+bool A[MAXV][MAXV];
 
 // depth first search
 // return false if the graph is not bipartite graph
 bool dfs(int v, int c) {
   color[v] = c;
-  for (int i = 1; i <= N; i++) {
+  for (int i = 1; i <= MAXV; i++) {
     if (v == i) {
       continue;
     }
