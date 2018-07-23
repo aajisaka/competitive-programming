@@ -17,7 +17,7 @@ void dijkstra(int s) {
   fill(d, d+V, INT_MAX);
   d[s] = 0;
 
-  priority_queue<P, vector<P>, greater> queue;
+  priority_queue<P, vector<P>, greater<>> queue;
   queue.push(P(0, s));
   while (!queue.empty()) {
     P p = queue.top(); queue.pop();
