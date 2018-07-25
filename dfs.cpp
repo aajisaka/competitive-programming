@@ -1,6 +1,6 @@
 int const MAXV = 100;
-int color[MAXV];
-bool A[MAXV][MAXV];
+int color[MAXV+1];
+bool A[MAXV+1][MAXV+1];
 
 // depth first search
 // return false if the graph is not bipartite graph
