@@ -11,12 +11,6 @@ long long gcd(long long a, long long b) {
   return a;
 }
 
-void swap(int &a, int &b) {
-  int tmp = b;
-  b = a;
-  a = tmp;
-}
-
 // return a^x (mod mod)
 long long mod_pow(long long a, long long x, long long mod) {
   long long res = 1;
