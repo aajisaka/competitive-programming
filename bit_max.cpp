@@ -4,7 +4,7 @@
 int const MAXN = 100000;
 std::vector<int> bit(MAXN+1);
 
-// update bit[j] (j >= i) with max(bit[j], x)
+// update bit[j] (j >= i > 0) with max(bit[j], x)
 void update(int i, int x) {
   while (i <= MAXN) {
     bit.at(i) = std::max(bit.at(i), x);
