@@ -1,11 +1,11 @@
 #include<vector>
 
 std::vector<int> par;
-std::vector<int> rak; // rank
+std::vector<int> rak; // number of the vertices
 
 void init(int n) {
   par.resize(n+1);
-  rak.resize(n+1, 0);
+  rak.resize(n+1, 1);
   for(int i=1; i<=n; i++) {
     par[i] = i;
   }
@@ -24,10 +24,11 @@ void unite(int x, int y) {
   y = find(y);
   if (x==y) return;
   if (rak[x] < rak[y]) {
+    rak[y] += rak[x];
     par[x] = y;
   } else {
+    rak[x] += rak[y];
     par[y] = x;
-    if (rak[x] == rak[y]) rak[x]++;
   }
 }
 
