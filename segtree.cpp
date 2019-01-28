@@ -1,18 +1,17 @@
-// Segment Tree
+#include<vector>
+using namespace std;
+
+// Segment Tree for query min[a, b)
 // if n = 100000, MAXN should be 1<<17 or larger
 // if n = 200000, MAXN should be 1<<18 or larger
-const int MAXN;
-
 struct {
   int N;
-  vector<long long> dat = vector<long long>(2*MAXN);
+  vector<long long> dat;
 
   void init(int n) {
     N = 1;
     while(N < n) N *= 2;
-    for(int i=0; i<2*N-1; i++) {
-      dat[i] = LONG_MAX;
-    }
+    dat.resize(2*N-1, LONG_MAX);
   }
 
   // update k-th element
