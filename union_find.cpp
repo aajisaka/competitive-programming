@@ -1,12 +1,14 @@
 #include<vector>
 
-std::vector<int> par(200005);
-std::vector<int> rak(200005);
+std::vector<int> par;
+std::vector<int> rak; // rank
 
 void init(int n) {
+  par.resize(n+1);
+  rak.resize(n+1);
   for(int i=1; i<=n; i++) {
-    par.at(i) = i;
-    rak.at(i) = 0;
+    par[i] = i;
+    rak[i] = 0;
   }
 }
 
