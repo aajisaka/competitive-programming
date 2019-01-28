@@ -2,8 +2,6 @@
 using namespace std;
 
 // Segment Tree for query min[a, b)
-// if n = 100000, MAXN should be 1<<17 or larger
-// if n = 200000, MAXN should be 1<<18 or larger
 struct {
   int N;
   vector<long long> dat;
