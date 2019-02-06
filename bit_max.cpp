@@ -1,23 +1,36 @@
 #include <algorithm>
 #include <vector>
 
-int const MAXN = 100000;
-std::vector<int> bit(MAXN+1);
+using ll = long long;
+using namespace std;
 
-// update bit[j] (j >= i > 0) with max(bit[j], x)
-void update(int i, int x) {
-  while (i <= MAXN) {
-    bit.at(i) = std::max(bit.at(i), x);
-    i += i & -i;
-  }
-}
+struct {
+  int MAXN; vector<ll> bit;
 
-// get max bit[j] (0 <= j <= i)
-int getmax(int i) {
-  int s = 0;
-  while (i>0) {
-    s = std::max(bit.at(i), s);
-    i -= i & -i;
+  void init(int n) {
+    MAXN = n;
+    bit.resize(n+1);
   }
-  return s;
-}
+
+  // update bit[j] (j >= i > 0) with max(bit[j], x)
+  void update(int i, ll x) {
+    while (i <= MAXN) {
+      bit.at(i) = max(bit.at(i), x);
+      i += i & -i;
+    }
+  }
+
+  void reset() {
+    bit.assign(MAXN+1, 0LL);
+  }
+
+  // get max bit[j] (0 <= j <= i)
+  ll getmax(int i) {
+    ll s = 0;
+    while (i>0) {
+      s = max(bit.at(i), s);
+      i -= i & -i;
+    }
+    return s;
+  }
+} B;
