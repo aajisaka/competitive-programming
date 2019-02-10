@@ -9,12 +9,12 @@ long long gcd(long long a, long long b) {
   return a;
 }
 
-// return a^x (mod mod)
-long long mod_pow(long long a, long long x, long long mod) {
+// return a^n (mod mod)
+long long mod_pow(long long a, long long n, long long mod) {
   long long res = 1;
-  while(x > 0) {
-    if (x & 1) res = res * a % mod;
-    res = res * res % mod; x >>= 1;
+  while(n > 0) {
+    if (n & 1) res = res * a % mod;
+    a = a * a % mod; n >>= 1;
   }
   return res;
 }
