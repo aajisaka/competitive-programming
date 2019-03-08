@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// return A[i]: The length of the longest substring starting from S[i]
+// which is also a prefix of S. Obviously, A[0] = S.size();
 void Zalgorithm(vector<int>& A, string& S) {
   A[0] = S.size();
   int i = 1, j = 0;
