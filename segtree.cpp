@@ -9,7 +9,7 @@ struct {
   void init(int n) {
     N = 1;
     while(N < n) N *= 2;
-    dat.resize(2*N-1, LONG_MAX);
+    dat.resize(2*N-1, LLONG_MAX);
   }
 
   // update k-th element
@@ -27,7 +27,7 @@ struct {
     return query(a, b, 0, 0, N);
   }
   long long query(int a, int b, int k, int l, int r) {
-    if (r <= a || b <= l) return LONG_MAX;
+    if (r <= a || b <= l) return LLONG_MAX;
     if (a <= l && r <= b) return dat[k];
     int m = (l+r)/2;
     return min(query(a, b, k*2+1, l, m), query(a, b, k*2+2, m, r));
