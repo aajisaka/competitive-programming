@@ -22,6 +22,16 @@ struct {
     }
   }
 
+  // add k-th element by a
+  void add(int k, long long a) {
+    k += N-1;
+    dat[k] += a;
+    while(k > 0) {
+      k = (k-1)/2;
+      dat[k] = min(dat[k*2+1], dat[k*2+2]);
+    }
+  }
+
   // return min[a, b)
   long long query(int a, int b) {
     return query(a, b, 0, 0, N);
