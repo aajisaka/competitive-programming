@@ -12,6 +12,7 @@
 #include <numeric>
 #include <chrono>
 #include <ctime>
+#include <cassert>
 #include <bitset>
 #include <iterator>
 #include <cmath>
