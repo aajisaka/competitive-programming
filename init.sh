@@ -1,6 +1,6 @@
 #!/bin/bash
 
-// copy templates to code directory
+# copy templates to code directory
 mkdir -p code
 cp template.cpp code/a.cpp
 cp template.cpp code/b.cpp
