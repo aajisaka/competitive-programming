@@ -35,9 +35,9 @@ constexpr ll mod = 1e9+7;
 const double PI = acos(-1.0);
 mt19937_64 engine(chrono::steady_clock::now().time_since_epoch().count());
 
-int main() {
+signed main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 
-  // start competitive programming here
+
 }
