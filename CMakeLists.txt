@@ -1,9 +1,8 @@
-cmake_minimum_required(VERSION 3.10)
-project(CompetitiveProgramming)
+cmake_minimum_required(VERSION 3.12)
+project(competitive_programming_cpp)
 
-set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -fsanitize=address,fuzzer-no-link -fsanitize-coverage=edge,indirect-calls")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -fsanitize=address")
 
 add_executable(a.out code/a.cpp)
 add_executable(b.out code/b.cpp)
