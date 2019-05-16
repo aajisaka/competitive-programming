@@ -46,7 +46,7 @@ vector<mint> fact(MAXN+1);
 
 void init() {
   fact[0] = 1;
-  for(int i=1; i<=MAXN; i++) fact[i] = fact[i-1]*i%mod;
+  for(int i=1; i<=MAXN; i++) fact[i] = fact[i-1]*i;
 }
 
 // nCr
