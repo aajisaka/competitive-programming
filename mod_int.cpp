@@ -1,17 +1,16 @@
 #include<iostream>
+
 using ll = long long;
 
 using namespace std;
-constexpr mod = 1e9+7;
+constexpr ll mod = 1e9+7;
 
-// Mod int
-ll extgcd(ll a, ll b, ll &x, ll &y) {
-  auto d = a;
-  if (b != 0) {d = extgcd(b, a%b, y, x); y -= (a/b)*x;} else { x = 1; y = 0;}
-  return d;
-}
+// Mod int library
+
 ll minv(ll a, ll m) {
-  ll x, y; extgcd(a, m, x, y); return (m + x%m)%m;
+  ll b = m, u = 1, v = 0;
+  while (b) { ll t = a/b; swap(a -= t*b, b); swap(u -= t*v, v); }
+  return (u%m+m)%m;
 }
 struct mint {
   ll x;
@@ -32,3 +31,26 @@ struct mint {
 };
 istream& operator>>(istream&i,mint&a){i>>a.x;return i;}
 ostream& operator<<(ostream&o,const mint&a){o<<a.x;return o;}
+
+mint mod_pow(mint a, long long x) {
+  mint res = 1;
+  while(x > 0) {
+    if (x & 1) res *= a;
+    a *= a; x >>= 1;
+  }
+  return res;
+}
+
+int MAXN = 100000;
+vector<mint> fact(MAXN+1);
+
+void init() {
+  fact[0] = 1;
+  for(int i=1; i<=MAXN; i++) fact[i] = fact[i-1]*i%mod;
+}
+
+// nCr
+mint comb(int n, int r) {
+  if (n < r || n < 0 || r < 0) return 0;
+  return fact[n]/(fact[r]*fact[n-r]);
+}
