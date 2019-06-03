@@ -1,13 +1,23 @@
 #include <bits/stdc++.h>
 
-#define rep(i,n) for(int i=0; i<(int)(n); i++)
-#define debug(x) cerr << #x << ": " << x << ", "
-#define debugln(x) cerr << #x << ": " << x << '\n'
+using namespace std;
 
+void debug_out() { cerr << endl; }
+template <typename Head, typename... Tail>
+void debug_out(Head H, Tail... T) {
+  cerr << " " << to_string(H);
+  debug_out(T...);
+}
+#ifdef LOCAL
+#define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
+#else
+#define debug(...) 42
+#endif
+
+#define rep(i,n) for(int i=0; i<(int)(n); i++)
 template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return true; } return false; }
 template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return true; } return false; }
 
-using namespace std;
 using ll = long long;
 using P = pair<ll, ll>;
 
