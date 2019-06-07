@@ -7,10 +7,12 @@ constexpr ll mod = 1e9+7;
 
 // Mod int library
 
+unordered_map<ll, ll> minvmap;
 ll minv(ll a, ll m) {
+  auto k = a; auto p = minvmap[a]; if (p != 0) return p;
   ll b = m, u = 1, v = 0;
   while (b) { ll t = a/b; swap(a -= t*b, b); swap(u -= t*v, v); }
-  return (u%m+m)%m;
+  p = (u%m+m)%m; minvmap[k] = p; return p;
 }
 struct mint {
   ll x;
