@@ -1,7 +1,6 @@
-#include<iostream>
+#include <bits/stdc++.h>
 
 using ll = long long;
-
 using namespace std;
 constexpr ll mod = 1e9+7;
 
@@ -34,7 +33,7 @@ struct mint {
 istream& operator>>(istream&i,mint&a){i>>a.x;return i;}
 ostream& operator<<(ostream&o,const mint&a){o<<a.x;return o;}
 
-mint mod_pow(mint a, long long x) {
+mint mod_pow(mint a, ll x) {
   mint res = 1;
   while(x > 0) {
     if (x & 1) res *= a;
@@ -44,8 +43,8 @@ mint mod_pow(mint a, long long x) {
 }
 
 int MAXN = 100000;
+// factorial
 vector<mint> fact(MAXN+1);
-
 void init() {
   fact[0] = 1;
   for(int i=1; i<=MAXN; i++) fact[i] = fact[i-1]*i;
@@ -55,4 +54,31 @@ void init() {
 mint comb(int n, int r) {
   if (n < r || n < 0 || r < 0) return 0;
   return fact[n]/(fact[r]*fact[n-r]);
+}
+
+// Matrix library
+
+// return a * b where a and b are n * n matrix
+vector<mint> mat_mul(const vector<mint>& a, const vector<mint>& b, int n) {
+  vector<mint> ret(n*n);
+  rep(i, n) rep(j, n) rep(k, n) ret[i*n+j] += a[i*n+k]*b[k*n+j];
+  return ret;
+}
+
+// return identity matrix of size n * n
+vector<mint> id_mat(int n) {
+  vector<mint> ret(n*n);
+  rep(i, n) ret[i*n+i] = 1;
+  return ret;
+}
+
+// return a^x where a is n * n matrix
+// a is changed, so do not use &a
+vector<mint> mat_pow(vector<mint> a, ll x, int n) {
+  vector<mint> ret = id_mat(n);
+  while(x>0) {
+    if (x&1) ret = mat_mul(ret, a, n);
+    a = mat_mul(a, a, n); x>>=1;
+  }
+  return ret;
 }
