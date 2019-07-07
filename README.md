@@ -13,5 +13,3 @@ cmake .
 make
 ```
 
-## License
-MIT
