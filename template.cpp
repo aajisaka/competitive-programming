@@ -23,7 +23,7 @@ using P = pair<ll, ll>;
 
 //constexpr ll mod = 998244353;
 constexpr ll mod = 1e9+7;
-const double PI = acos(-1.0);
+constexpr double PI = 3.14159265358979323846;
 mt19937_64 engine(chrono::steady_clock::now().time_since_epoch().count());
 
 signed main() {
