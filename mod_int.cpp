@@ -45,15 +45,18 @@ mint mod_pow(mint a, ll x) {
 int MAXN = 100000;
 // factorial
 vector<mint> fact(MAXN+1);
+vector<mint> inv(MAXN+1);
 void init() {
   fact[0] = 1;
   for(int i=1; i<=MAXN; i++) fact[i] = fact[i-1]*i;
+  inv[MAXN] = mint(1)/fact[MAXN];
+  for(int i=MAXN-1; i>=0; i--) inv[i] = inv[i+1]*(i+1);
 }
 
 // nCr
 mint comb(int n, int r) {
   if (n < r || n < 0 || r < 0) return 0;
-  return fact[n]/(fact[r]*fact[n-r]);
+  return fact[n]*inv[r]*inv[n-r];
 }
 
 // Matrix library
