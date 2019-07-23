@@ -1,11 +1,11 @@
 .idea/
-.vscode/
-cmake-build-debug/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 competitive_programming_cpp.cbp
-code/*.cpp
-*.out
 Makefile
-test*
+
+tasks/*.cpp
+testrun/main.cpp
+out/main.cpp
+testrunner

@@ -1,0 +1,10 @@
+%Code%
+
+signed main() {
+  SPEED;
+  %ClassName% solver;
+  %Input%
+  %Output%
+  %SolverCall%
+  return 0;
+}
