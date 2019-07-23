@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
 
-int getTheAnswer() {
-  return 42;
-}
-
 // greatest common divisor
 long long gcd(long long a, long long b) {
   long long r = 1;
