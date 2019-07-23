@@ -1,11 +1,8 @@
-#include <bits/stdc++.h>
+#include "common.hpp"
 
-using ll = long long;
-using namespace std;
 constexpr ll mod = 1e9+7;
 
 // Mod int library
-
 unordered_map<ll, ll> minvmap;
 ll minv(ll a, ll m) {
   auto k = a; auto p = minvmap[a]; if (p != 0) return p;

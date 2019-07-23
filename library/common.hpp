@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -21,13 +21,3 @@ template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return true
 
 using ll = long long;
 using P = pair<ll, ll>;
-
-//constexpr ll mod = 998244353;
-constexpr ll mod = 1e9+7;
-constexpr double PI = 3.14159265358979323846;
-mt19937_64 engine(chrono::steady_clock::now().time_since_epoch().count());
-
-signed main() {
-  SPEED;
-
-}
