@@ -4,10 +4,11 @@ std::vector<int> par;
 std::vector<int> rak; // number of the vertices
 
 void init(int n) {
-  par.resize(n+1);
-  rak.resize(n+1, 1);
-  for(int i=1; i<=n; i++) {
+  par.resize(n);
+  rak.resize(n);
+  for(int i=0; i<n; i++) {
     par[i] = i;
+    rak[i] = 1;
   }
 }
 
