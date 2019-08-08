@@ -16,6 +16,7 @@ void debug_out(Head H, Tail... T) {
 
 #define SPEED ios_base::sync_with_stdio(false);cin.tie(nullptr)
 #define rep(i,n) for(int i=0; i<(int)(n); i++)
+#define all(v) v.begin(), v.end()
 template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return true; } return false; }
 template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return true; } return false; }
 
