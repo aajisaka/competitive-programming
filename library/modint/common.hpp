@@ -36,9 +36,9 @@ istream& operator>>(istream&i,mint<mod>&a){i>>a.x;return i;}
 template<ll mod=mod17>
 ostream& operator<<(ostream&o,const mint<mod>&a){o<<a.x;return o;}
 
-template<ll mod=mod17>
-mint<mod> mod_pow(mint<mod> a, ll x) {
-  mint<mod> res = 1;
+template<typename T>
+T mod_pow(T a, ll x) {
+  T res = 1;
   while(x > 0) {
     if (x & 1) res *= a;
     a *= a; x >>= 1;

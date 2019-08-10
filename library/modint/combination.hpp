@@ -1,5 +1,3 @@
-#include "common.hpp"
-
 template<ll mod=mod17>
 class combination {
     // factorial

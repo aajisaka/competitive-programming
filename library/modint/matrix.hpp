@@ -1,6 +1,3 @@
-#include "common.hpp"
-#include "../common.hpp"
-
 // Matrix library
 
 template<ll mod=mod17>
