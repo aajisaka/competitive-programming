@@ -1,6 +1,7 @@
 constexpr ll mod17 = 1e9+7;
 constexpr ll mod19 = 1e9+9;
 constexpr ll mod9 = 998244353;
+ll mod = mod17;
 
 // Mod int library
 unordered_map<ll, ll> minvmap;
@@ -11,7 +12,6 @@ ll minv(ll a, ll m) {
   p = (u%m+m)%m; minvmap[k] = p; return p;
 }
 
-template<ll mod=mod17>
 struct mint {
   ll x;
   mint():x(0){}
@@ -29,12 +29,6 @@ struct mint {
   bool operator<(const mint& a)const{ return x < a.x;}
   bool operator==(const mint& a)const{ return x == a.x;}
 };
-
-template<ll mod=mod17>
-istream& operator>>(istream&i,mint<mod>&a){i>>a.x;return i;}
-
-template<ll mod=mod17>
-ostream& operator<<(ostream&o,const mint<mod>&a){o<<a.x;return o;}
 
 template<typename T>
 T mod_pow(T a, ll x) {
