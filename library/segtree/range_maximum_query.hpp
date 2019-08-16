@@ -1,5 +1,3 @@
-#include "../common.hpp"
-
 // Segment Tree for query max[a, b)
 class RangeMaximumQuery {
     int N;
