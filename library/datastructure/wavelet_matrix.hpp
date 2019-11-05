@@ -1,5 +1,5 @@
 // Original: https://github.com/beet-aizu/library
-
+// BEGIN
 struct FullyIndexableDictionary{
     int len,blk;
     vector<unsigned> bit;
@@ -186,3 +186,4 @@ struct WaveletMatrix{
       return k?rquantile(l,r,k-1):npos;
     }
 };
+// END
