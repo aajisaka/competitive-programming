@@ -123,6 +123,7 @@ struct WaveletMatrix{
     }
 
     // return k-th largest value in [l,r)
+    // k=0 means the largest value
     T quantile(int l,int r,int k){
       if(r-l<=k||k<0) return -1;
       T res=0;
@@ -142,6 +143,8 @@ struct WaveletMatrix{
       return res;
     }
 
+    // return k-th smallest value in [l, r)
+    // k=0 means the smallest value
     T rquantile(int l,int r,int k){
       return quantile(l,r,r-l-k-1);
     }
