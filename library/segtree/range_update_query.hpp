@@ -1,19 +1,16 @@
-#include<vector>
-using namespace std;
-
 // update by range, query by point
-struct {
+class RangeUpdateQuery {
   int N;
   vector<long long> dat;
 
-  void init(int n) {
+public: RangeUpdateQuery(int n) {
     N = 1;
     while(N < n) N *= 2;
     dat.resize(2*N-1, 0);
   }
 
   // add [a, b) by x
-  void add(int a, int b, long long x) {
+public: void add(int a, int b, long long x) {
     return add(a, b, x, 0, 0, N);
   }
   void add(int a, int b, ll x, int k, int l, int r) {
@@ -28,7 +25,7 @@ struct {
   }
 
   // return k
-  long long query(int k) {
+public: long long query(int k) {
     k += N-1;
     ll ret = dat[k];
     while(k > 0) {
