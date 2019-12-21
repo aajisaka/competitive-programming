@@ -7,6 +7,7 @@ using namespace std;
 // the center is S[i]. Obviously, R[0] = R[S.size()] = 1;
 // If you would like to find palindromes whose length are even,
 // add dummy characters in S.
+// S = "aba" -> R = {1, 2, 1}
 void manacher(string& S, vector<int>& R) {
   int i = 0, j = 0;
   while (i < S.size()) {
