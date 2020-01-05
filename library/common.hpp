@@ -24,4 +24,4 @@ using ll = long long;
 using P = pair<ll, ll>;
 
 constexpr long double PI = 3.14159265358979323846264338327950288L;
-mt19937_64 engine(chrono::steady_clock::now().time_since_epoch().count());
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
