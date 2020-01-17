@@ -1,17 +1,26 @@
 // Segment Tree for query sum[a, b)
 template<typename T>
-class RangeSumQuery {
+class SegTree {
     using F = function<T(T, T)>;
     int N;
     vector<T> dat;
-    const F f; // sum function
+    const F f;  // merge monoids
     const T ID; // identity
 
-    // Normal case:
+    // RangeSumQuery:
     // auto f = [](ll a, ll b) { return a+b; };
     // auto ID = 0LL;
-    // RangeSumQuery<ll> seg(100000, f, ID);
-public: RangeSumQuery(int n, const F f, const T& ID) : f(f), ID(ID) {
+
+    // RangeMaximumQuery:
+    // auto f = [](ll a, ll b) { return max(a, b); };
+    // auto ID = 0LL; (sometimes it should be LLONG_MIN)
+
+    // RangeMinimumQuery:
+    // auto f = [](ll a, ll b) { return min(a, b); };
+    // auto ID = LLONG_MAX;
+
+    // auto seg = SegTree<ll>(100000, f, ID);
+public: SegTree(int n, const F f, const T& ID) : f(f), ID(ID) {
     N = 1;
     while(N < n) N *= 2;
     dat.resize(2*N-1, ID);
