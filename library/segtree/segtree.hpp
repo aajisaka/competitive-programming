@@ -45,7 +45,7 @@ public: void update(int k, const T& a) {
   // add k-th element by a
 public: void add(int k, const T& a) {
     k += N-1;
-    f(dat[k], a);
+    dat[k] = f(dat[k], a);
     while(k > 0) {
       k = (k-1)/2;
       dat[k] = f(dat[k*2+1], dat[k*2+2]);
