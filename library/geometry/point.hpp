@@ -16,6 +16,7 @@ struct Point {
     double det(Point p) { return add(x*p.y, -y*p.x);}
     double dist(Point a){return (*this-a).norm();}
     double norm() {return sqrt(x*x+y*y);}
+    Point rotate90() { return Point(y, -x);}
 
     // return true if q exists on a line segment [p1, p2]
     static bool on_seg(Point p1, Point p2, Point q) {
@@ -85,5 +86,22 @@ struct Circle{
         }
       }
       return circle;
+    }
+
+    // Return if the two circle is crossed
+    static bool crossed(Circle c1, Circle c2) {
+      double d = (c1.p-c2.p).norm();
+      double rc = (d*d + c1.r*c1.r - c2.r*c2.r) / (2*d);
+      return c1.r*c1.r - rc*rc >= 0;
+    }
+
+    // Return two cross points. It should be guarded by crossed function.
+    static pair<Point, Point> cross(Circle c1, Circle c2) {
+      double d = (c1.p-c2.p).norm();
+      double rc = (d*d + c1.r*c1.r - c2.r*c2.r) / (2*d);
+      double rs = sqrt(c1.r*c1.r - rc*rc);
+      Point diff = (c2.p - c1.p) / d;
+      Point diff90 = diff.rotate90();
+      return make_pair(c1.p + diff*rc + diff90*rs, c1.p + diff*rc - diff90*rs);
     }
 };
