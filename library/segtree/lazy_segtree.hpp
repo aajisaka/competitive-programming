@@ -22,7 +22,7 @@ struct LazySegmentTree{
     E ei;
     vector<T> dat;
     vector<E> laz;
-    SegmentTree(F f,G g,H h,T ti,E ei):
+    LazySegmentTree(F f,G g,H h,T ti,E ei):
         f(f),g(g),h(h),ti(ti),ei(ei){}
 
     void init(int n_){
