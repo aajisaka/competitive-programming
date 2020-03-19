@@ -14,6 +14,7 @@ class SegTree {
     // RangeMaximumQuery:
     // auto f = [](ll a, ll b) { return max(a, b); };
     // auto ID = 0LL; (sometimes it should be LLONG_MIN)
+    // (sometimes it should be LLONG_MIN)
 
     // RangeMinimumQuery:
     // auto f = [](ll a, ll b) { return min(a, b); };
