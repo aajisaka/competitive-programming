@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(competitive_programming_cpp)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -fsanitize=address,undefined -DLOCAL -g")
 
 add_executable(output out/main.cpp)
