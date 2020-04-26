@@ -4,6 +4,8 @@ CMakeCache.txt
 cmake_install.cmake
 competitive_programming_cpp.cbp
 Makefile
+interactive_runner.py
+local_testing_tool.py
 
 tasks/*.cpp
 testrun/main.cpp
