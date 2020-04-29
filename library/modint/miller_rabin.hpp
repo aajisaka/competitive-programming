@@ -1,53 +1,40 @@
-/*
-  The implementation of Miller-Rabin Test with C++
-  varified with ALDS1_1_C
-
-  http://joisino.hatenablog.com/entry/2017/08/03/210000
-
-  Copyright (c) 2017 joisino
-  Released under the MIT license
-  http://opensource.org/licenses/mit-license.php
- */
+// TODO: Create and use 64bit mint class to avoid % function. This speed up to ~10x.
+// Verify: https://yukicoder.me/submissions/472560
 struct Miller {
-    const vector<long long> v = { 2 , 7 , 61 }; // < 4,759,123,141
-    long long modpow( long long x, long long k, long long m ){
-      long long res = 1;
-      while( k ){
-        if( k & 1 ){
-          res = res * x % m;
+    const vector<unsigned long long> v = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
+    unsigned long long modpow(unsigned long long x, unsigned long long k, unsigned long long m){
+      unsigned long long res = 1;
+      while(k > 0){
+        if(k&1){
+          res = __uint128_t(res) * x % m;
         }
         k /= 2;
-        x = x * x % m;
+        x = __uint128_t(x) * x % m;
       }
       return res;
     }
-    // check if n is prime
-    bool check( long long n ){
-      if( n < 2 ){
-        return false;
+    bool suspect(unsigned long long a, unsigned long long s, unsigned long long d, unsigned long long n) {
+      unsigned long long x = modpow(a, d, n);
+      if (x == 1) return true;
+      for(int r = 0; r < s; r++) {
+        if (x == n-1) return true;
+        x = __uint128_t(x) * x % n;
       }
-      long long d = n - 1;
-      long long s = 0;
-      while( d % 2 == 0 ){
-        d /= 2;
+      return false;
+    }
+
+    // check if n is prime
+    bool check(unsigned long long n ) {
+      if (n < 2 || (n > 2 && n % 2 == 0)) return false;
+      unsigned long long d = n - 1;
+      unsigned long long s = 0;
+      while (!(d & 1)) {
+        d >>= 1;
         s++;
       }
-      for( long long a : v ){
-        if( a == n ){
-          return true;
-        }
-        if( modpow( a , d , n ) != 1 ){
-          bool ok = true;
-          for( long long r = 0; r < s; r++ ){
-            if( modpow( a, d * (1LL << r), n ) == n-1 ){
-              ok = false;
-              break;
-            }
-          }
-          if( ok ){
-            return false;
-          }
-        }
+      for (auto a: v) {
+        if (a >= n) break;
+        if (!suspect(a, s, d, n)) return false;
       }
       return true;
     }
