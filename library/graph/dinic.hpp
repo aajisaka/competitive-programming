@@ -1,4 +1,4 @@
-struct {
+struct dinic {
   struct edge { int to; ll cost; int rev; };
   int N;
   vector<vector<edge>> graph;
@@ -63,4 +63,4 @@ struct {
       }
     }
   }
-} D;
+};
