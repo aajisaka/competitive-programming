@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A - Registration" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ARegistration" cppPath="tasks/ARegistration.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="chokudai&#10;chokudaiz&#10;" output="Yes&#10;" active="true" />
+      <test input="snuke&#10;snekee&#10;" output="No&#10;" active="true" />
+      <test input="a&#10;aa&#10;" output="Yes&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
