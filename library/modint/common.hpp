@@ -73,7 +73,7 @@ struct Miller {
       mint64 one = 1, minusone = n-1, ma = a;
       auto x = mod_pow(ma, d);
       if (x.x == one.x) return true;
-      for(int r = 0; r < s; r++) {
+      for(ull r = 0; r < s; r++) {
         if (x.x == minusone.x) return true;
         x = x * x;
       }
