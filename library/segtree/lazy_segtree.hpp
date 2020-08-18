@@ -3,8 +3,9 @@
 /* range add, range max query
 auto f = [](ll a, ll b) { return max(a, b);};
 auto g = [](ll a, ll b) { return a+b;};
-auto ID = 0LL;
 LazySegmentTree<ll, ll> seg(f, g, g, 0, 0);
+// If return negative value:
+// LazySegmentTree<ll, ll> seg(f, g, g, LLONG_MIN/2, 0);
 const int sz = 1<<20;
 seg.build(vector<ll>(sz, 0));
 */
