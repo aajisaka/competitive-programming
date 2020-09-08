@@ -1,10 +1,6 @@
 // Original: https://img.atcoder.jp/practice2/ac-library.zip
-
-#include <cassert>
-#include <limits>
-#include <queue>
-#include <vector>
-
+#pragma once
+#include "../common.hpp"
 template <class Cap> struct mf_graph {
 public:
     mf_graph() : _n(0) {}

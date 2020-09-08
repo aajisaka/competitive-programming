@@ -1,8 +1,7 @@
 // Original: https://img.atcoder.jp/practice2/ac-library.zip
 
-#include <algorithm>
-#include <cassert>
-#include <vector>
+#pragma once
+#include "../common.hpp"
 
 /*
 // Sample Usages (copy-and-paste it!)
@@ -74,7 +73,7 @@ public:
       return max_right(l, [](S x) { return f(x); });
     }
 
-    // return the smallest r such that f(op(a[l], ... ,a[r-1])) become false
+    // return the largest r such that f(op(a[l], ... ,a[r-1])) is still true
     // f(e()) must return true
     template<class F>
     int max_right(int l, F f) {
@@ -106,7 +105,7 @@ public:
       return min_left(r, [](S x) { return f(x); });
     }
 
-    // return the largest l such that f(op(a[l], ... ,a[r-1])) become false
+    // return the smallest l such that f(op(a[l], ... ,a[r-1])) is still true
     // f(e()) must return true
     template<class F>
     int min_left(int r, F f) {

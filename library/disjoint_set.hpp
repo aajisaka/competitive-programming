@@ -1,8 +1,9 @@
-#include<vector>
+#pragma once
+#include "./common.hpp"
 
 struct DisjointSet {
-    std::vector<int> par;
-    std::vector<int> rak; // number of the vertices
+    vector<int> par;
+    vector<int> rak; // number of the vertices
 
     void init(int n) {
       par.resize(n);

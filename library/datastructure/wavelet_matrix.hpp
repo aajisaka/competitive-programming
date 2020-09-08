@@ -1,4 +1,6 @@
 // Original: https://github.com/beet-aizu/library
+#pragma once
+#include "../common.hpp"
 // BEGIN
 struct FullyIndexableDictionary{
     int len,blk;

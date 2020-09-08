@@ -1,5 +1,6 @@
 // Verified: https://judge.yosupo.jp/submission/8595
-
+#pragma once
+#include "../common.hpp"
 /*
  * How to use:
 

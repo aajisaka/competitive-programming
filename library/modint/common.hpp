@@ -1,3 +1,6 @@
+#pragma once
+#include "../common.hpp"
+
 constexpr ll mod17 = 1e9+7;
 constexpr ll mod19 = 1e9+9;
 constexpr ll mod9 = 998244353;

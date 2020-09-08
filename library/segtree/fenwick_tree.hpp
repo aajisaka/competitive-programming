@@ -1,4 +1,5 @@
-#include<vector>
+#pragma once
+#include "../common.hpp"
 
 class FenwickTree {
     std::vector<long long> data;
