@@ -210,3 +210,53 @@ std::vector<long long> convolution_ll(const std::vector<long long>& a,
 
   return c;
 }
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+struct dual_vec {
+    std::vector<mint> v;
+    void resize(int sz) {
+      v.resize(sz);
+    }
+};
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+dual_vec<mint> mfft(const std::vector<mint>& a, int sz) {
+  dual_vec<mint> fa{a};
+  fa.resize(sz);
+  internal::butterfly(fa.v);
+  return fa;
+}
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+dual_vec<mint> operator*(dual_vec<mint> a, const dual_vec<mint>& b) {
+  for(int i=0; i<(int)a.v.size(); i++) {
+    a.v[i] *= b.v[i];
+  }
+  return a;
+}
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+std::vector<mint> ifft(dual_vec<mint> fa, int n) {
+  internal::butterfly_inv(fa.v);
+  mint iz = mint(fa.v.size()).inv();
+  for (int i = 0; i < fa.v.size(); i++) fa.v[i] *= iz;
+  fa.resize(n);
+  return fa.v;
+}
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+std::vector<mint> inverse(std::vector<mint> &a) {
+  assert(a.size());
+  assert(a[0].val() != 0);
+  std::vector<mint> b{ 1/a[0] };
+  for(int m = 1; m < (int)a.size(); m *= 2) {
+    std::vector<mint> x(begin(a), begin(a) + std::min<int>(a.size(), 2*m));
+    dual_vec<mint> fb = mfft(b, 2*m);
+    x = ifft(mfft(x, 2*m)*fb, 2*m);
+    fill(begin(x), begin(x)+m, 0);
+    x = ifft(mfft(x, 2*m)*fb, 2*m);
+    for(auto& e: x) e = -e;
+    b.insert(end(b), begin(x)+m, end(x));
+  }
+  return {begin(b), begin(b) + a.size()};
+}
