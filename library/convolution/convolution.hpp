@@ -260,7 +260,7 @@ vector<T> primitive(const vector<T> &a) {
 }
 
 template<class mint, internal::is_static_modint_t<mint> * = nullptr>
-std::vector<mint> inverse(std::vector<mint> &a) {
+std::vector<mint> inverse(const std::vector<mint> &a) {
   assert(a.size());
   assert(a[0].val() != 0);
   std::vector<mint> b{1 / a[0]};
@@ -277,7 +277,7 @@ std::vector<mint> inverse(std::vector<mint> &a) {
 }
 
 template<class mint, internal::is_static_modint_t<mint> * = nullptr>
-std::vector<mint> exponent(std::vector<mint> &a) {
+std::vector<mint> exponent(const std::vector<mint> &a) {
   assert(a.empty() or a[0].val() == 0);
   std::vector<mint> b{1, 1 < a.size() ? a[1] : 0};
   std::vector<mint> c{1};
@@ -313,4 +313,11 @@ std::vector<mint> exponent(std::vector<mint> &a) {
     b.insert(end(b), begin(x) + m, end(x));
   }
   return {begin(b), begin(b) + a.size()};
+}
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+std::vector<mint> logarithm(const std::vector<mint> &a) {
+  assert(not a.empty() and a[0] == 1);
+  auto res = primitive(convolution(derivative(a), inverse(a)));
+  return {begin(res), begin(res) + a.size()};
 }
