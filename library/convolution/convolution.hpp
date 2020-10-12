@@ -321,3 +321,18 @@ std::vector<mint> logarithm(const std::vector<mint> &a) {
   auto res = primitive(convolution(derivative(a), inverse(a)));
   return {begin(res), begin(res) + a.size()};
 }
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+std::vector<mint> power(std::vector<mint> a, long long m) {
+  int n = size(a);
+  int tz = 0;
+  while (tz < n and a[tz] == 0) tz++;
+  if (n == 0 or (tz and m >= (n + tz - 1) / tz)) return vector<mint>(n);
+  a.erase(begin(a), begin(a) + min<int>(a.size(), tz));
+  auto a0 = a[0];
+  a = convolution(a, vector<mint>{1 / a0});
+  a = exponent(convolution(logarithm(a), vector<mint>{m}));
+  a = convolution(a, vector<mint>{a0.pow(m)});
+  a.insert(begin(a), tz * m, 0);
+  return a;
+}
