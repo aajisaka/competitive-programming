@@ -214,13 +214,14 @@ std::vector<long long> convolution_ll(const std::vector<long long>& a,
 template<class mint, internal::is_static_modint_t<mint> * = nullptr>
 struct dual_vec {
     std::vector<mint> v;
+
     void resize(int sz) {
       v.resize(sz);
     }
 };
 
 template<class mint, internal::is_static_modint_t<mint> * = nullptr>
-dual_vec<mint> mfft(const std::vector<mint>& a, int sz) {
+dual_vec<mint> mfft(const std::vector<mint> &a, int sz) {
   dual_vec<mint> fa{a};
   fa.resize(sz);
   internal::butterfly(fa.v);
@@ -228,8 +229,8 @@ dual_vec<mint> mfft(const std::vector<mint>& a, int sz) {
 }
 
 template<class mint, internal::is_static_modint_t<mint> * = nullptr>
-dual_vec<mint> operator*(dual_vec<mint> a, const dual_vec<mint>& b) {
-  for(int i=0; i<(int)a.v.size(); i++) {
+dual_vec<mint> operator*(dual_vec<mint> a, const dual_vec<mint> &b) {
+  for (int i = 0; i < (int) a.v.size(); i++) {
     a.v[i] *= b.v[i];
   }
   return a;
@@ -244,19 +245,72 @@ std::vector<mint> ifft(dual_vec<mint> fa, int n) {
   return fa.v;
 }
 
+template<class T>
+vector<T> derivative(const vector<T> &a) {
+  vector<T> res(max((int) a.size() - 1, 0));
+  for (int i = 0; i < (int) res.size(); ++i) res[i] = (i + 1) * a[i + 1];
+  return res;
+}
+
+template<class T>
+vector<T> primitive(const vector<T> &a) {
+  vector<T> res(a.size() + 1);
+  for (int i = 1; i < (int) res.size(); ++i) res[i] = a[i - 1] / i;
+  return res;
+}
+
 template<class mint, internal::is_static_modint_t<mint> * = nullptr>
 std::vector<mint> inverse(std::vector<mint> &a) {
   assert(a.size());
   assert(a[0].val() != 0);
-  std::vector<mint> b{ 1/a[0] };
-  for(int m = 1; m < (int)a.size(); m *= 2) {
-    std::vector<mint> x(begin(a), begin(a) + std::min<int>(a.size(), 2*m));
-    dual_vec<mint> fb = mfft(b, 2*m);
-    x = ifft(mfft(x, 2*m)*fb, 2*m);
-    fill(begin(x), begin(x)+m, 0);
-    x = ifft(mfft(x, 2*m)*fb, 2*m);
-    for(auto& e: x) e = -e;
-    b.insert(end(b), begin(x)+m, end(x));
+  std::vector<mint> b{1 / a[0]};
+  for (int m = 1; m < (int) a.size(); m *= 2) {
+    std::vector<mint> x(begin(a), begin(a) + std::min<int>(a.size(), 2 * m));
+    dual_vec<mint> fb = mfft(b, 2 * m);
+    x = ifft(mfft(x, 2 * m) * fb, 2 * m);
+    fill(begin(x), begin(x) + m, 0);
+    x = ifft(mfft(x, 2 * m) * fb, 2 * m);
+    for (auto &e: x) e = -e;
+    b.insert(end(b), begin(x) + m, end(x));
+  }
+  return {begin(b), begin(b) + a.size()};
+}
+
+template<class mint, internal::is_static_modint_t<mint> * = nullptr>
+std::vector<mint> exponent(std::vector<mint> &a) {
+  assert(a.empty() or a[0].val() == 0);
+  std::vector<mint> b{1, 1 < a.size() ? a[1] : 0};
+  std::vector<mint> c{1};
+  dual_vec<mint> half_fc;
+  auto fc = mfft(c, 2);
+  for (int m = 2; m < (int) a.size(); m *= 2) {
+    auto fb = mfft(b, 2 * m);
+    auto half_fb = fb;
+    half_fb.resize(m);
+    half_fc = fc;
+    auto z = ifft(half_fb * half_fc, m);
+    fill(begin(z), begin(z) + m / 2, 0);
+    z = ifft(mfft(z, m) * half_fc, m);
+    for (auto &e: z) e = -e;
+    c.insert(end(c), begin(z) + m / 2, end(z));
+    fc = mfft(c, 2 * m);
+    std::vector<mint> x(begin(a), begin(a) + min<int>(a.size(), m));
+    x = derivative(x);
+    x.push_back(0);
+    auto fx = mfft(x, m);
+    x = ifft(fx * half_fb, m);
+    std::vector<mint> db = derivative(b);
+    x.resize(max(x.size(), db.size()));
+    for (int i = 0; i < (int) db.size(); i++) x[i] -= db[i];
+    x.resize(2 * m);
+    for (int i = 0; i < m - 1; i++) x[m + i] = x[i], x[i] = 0;
+    x = ifft(mfft(x, 2 * m) * fc, 2 * m);
+    x = primitive(x);
+    x.pop_back();
+    for (int i = m; i < min<int>(a.size(), 2 * m); i++) x[i] += a[i];
+    fill(begin(x), begin(x) + m, 0);
+    x = ifft(mfft(x, 2 * m) * fb, 2 * m);
+    b.insert(end(b), begin(x) + m, end(x));
   }
   return {begin(b), begin(b) + a.size()};
 }
