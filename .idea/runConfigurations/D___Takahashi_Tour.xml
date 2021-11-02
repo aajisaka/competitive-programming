@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="D - Takahashi Tour" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="DTakahashiTour" cppPath="tasks/DTakahashiTour.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;1 2&#10;4 2&#10;3 1&#10;" output="1 2 4 2 1 3 1&#10;" active="true" />
-      <test input="5&#10;1 2&#10;1 3&#10;1 4&#10;1 5&#10;" output="1 2 1 3 1 4 1 5 1&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

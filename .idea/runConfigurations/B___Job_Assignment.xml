@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="B - Job Assignment" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BJobAssignment" cppPath="tasks/BJobAssignment.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;8 5&#10;4 4&#10;7 9&#10;" output="5&#10;" active="true" />
-      <test input="3&#10;11 7&#10;3 2&#10;6 7&#10;" output="5&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

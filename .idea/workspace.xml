@@ -44,7 +44,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="name.admitriev.jhelper.configuration.TaskConfigurationExecutionTargetCMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -77,7 +76,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Task.F - String Cards">
+  <component name="RunManager">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -152,23 +151,6 @@
       <item itemvalue="CMake Application.output" />
       <item itemvalue="CMake Application.test" />
       <item itemvalue="CMake Application.testrunner" />
-      <item itemvalue="Task.F - Greedy Takahashi" />
-      <item itemvalue="Task.D - Takahashi Tour" />
-      <item itemvalue="Task.C - Made Up" />
-      <item itemvalue="Task.C - Friends and Travel costs" />
-      <item itemvalue="Task.A - Your First Judge" />
-      <item itemvalue="Task.B - log2(N)" />
-      <item itemvalue="Task.B - Job Assignment" />
-      <item itemvalue="Task.A - I Scream" />
-      <item itemvalue="Task.A1Chapter1" />
-      <item itemvalue="Task.E - Packing Under Range Regulations" />
-      <item itemvalue="Task.F - Substrings" />
-      <item itemvalue="Task.A - Distinct Strings" />
-      <item itemvalue="Task.B - Star or Not" />
-      <item itemvalue="Task.C - Calendar Validator" />
-      <item itemvalue="Task.D - Play Train" />
-      <item itemvalue="Task.E - フ" />
-      <item itemvalue="Task.F - String Cards" />
     </list>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -218,7 +200,7 @@
       <workItem from="1630087743583" duration="2331000" />
       <workItem from="1634754468217" duration="5842000" />
       <workItem from="1635601461332" duration="5388000" />
-      <workItem from="1635862658030" duration="1585000" />
+      <workItem from="1635862658030" duration="1802000" />
     </task>
     <servers />
   </component>
@@ -247,7 +229,7 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="2202" height="582" key="GridCell.Tab.0.bottom" timestamp="1635864229000">
+    <state width="2202" height="582" key="GridCell.Tab.0.bottom" timestamp="1635870494439">
       <screen x="72" y="27" width="2488" height="1413" />
     </state>
     <state width="1125" height="659" key="GridCell.Tab.0.bottom/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
@@ -255,8 +237,8 @@
     <state width="1351" height="582" key="GridCell.Tab.0.bottom/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287593" />
     <state width="1351" height="685" key="GridCell.Tab.0.bottom/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
     <state width="1351" height="685" key="GridCell.Tab.0.bottom/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
-    <state width="2202" height="582" key="GridCell.Tab.0.bottom/72.27.2488.1413@72.27.2488.1413" timestamp="1635864229000" />
-    <state width="2202" height="582" key="GridCell.Tab.0.center" timestamp="1635864228999">
+    <state width="2202" height="582" key="GridCell.Tab.0.bottom/72.27.2488.1413@72.27.2488.1413" timestamp="1635870494439" />
+    <state width="2202" height="582" key="GridCell.Tab.0.center" timestamp="1635870494438">
       <screen x="72" y="27" width="2488" height="1413" />
     </state>
     <state width="1125" height="659" key="GridCell.Tab.0.center/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
@@ -264,8 +246,8 @@
     <state width="1351" height="582" key="GridCell.Tab.0.center/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287593" />
     <state width="1351" height="685" key="GridCell.Tab.0.center/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
     <state width="1351" height="685" key="GridCell.Tab.0.center/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
-    <state width="2202" height="582" key="GridCell.Tab.0.center/72.27.2488.1413@72.27.2488.1413" timestamp="1635864228999" />
-    <state width="2202" height="582" key="GridCell.Tab.0.left" timestamp="1635864228999">
+    <state width="2202" height="582" key="GridCell.Tab.0.center/72.27.2488.1413@72.27.2488.1413" timestamp="1635870494438" />
+    <state width="2202" height="582" key="GridCell.Tab.0.left" timestamp="1635870494438">
       <screen x="72" y="27" width="2488" height="1413" />
     </state>
     <state width="1125" height="659" key="GridCell.Tab.0.left/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
@@ -273,8 +255,8 @@
     <state width="1351" height="582" key="GridCell.Tab.0.left/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287592" />
     <state width="1351" height="685" key="GridCell.Tab.0.left/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
     <state width="1351" height="685" key="GridCell.Tab.0.left/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
-    <state width="2202" height="582" key="GridCell.Tab.0.left/72.27.2488.1413@72.27.2488.1413" timestamp="1635864228999" />
-    <state width="2202" height="582" key="GridCell.Tab.0.right" timestamp="1635864228999">
+    <state width="2202" height="582" key="GridCell.Tab.0.left/72.27.2488.1413@72.27.2488.1413" timestamp="1635870494438" />
+    <state width="2202" height="582" key="GridCell.Tab.0.right" timestamp="1635870494439">
       <screen x="72" y="27" width="2488" height="1413" />
     </state>
     <state width="1125" height="659" key="GridCell.Tab.0.right/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
@@ -282,7 +264,7 @@
     <state width="1351" height="582" key="GridCell.Tab.0.right/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287593" />
     <state width="1351" height="685" key="GridCell.Tab.0.right/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
     <state width="1351" height="685" key="GridCell.Tab.0.right/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
-    <state width="2202" height="582" key="GridCell.Tab.0.right/72.27.2488.1413@72.27.2488.1413" timestamp="1635864228999" />
+    <state width="2202" height="582" key="GridCell.Tab.0.right/72.27.2488.1413@72.27.2488.1413" timestamp="1635870494439" />
     <state x="3149" y="1101" width="501" height="720" key="refactoring.ChangeSignatureDialog" timestamp="1629642034490">
       <screen x="1440" y="724" width="2560" height="1440" />
     </state>
