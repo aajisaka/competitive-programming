@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="competitive_programming_cpp" targetName="test" />
+      <config projectName="competitive_programming_cpp" targetName="output" />
+      <config projectName="competitive_programming_cpp" targetName="jhelper_example_project" />
+      <config projectName="competitive_programming_cpp" targetName="testrunner" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="name.admitriev.jhelper.configuration.TaskConfigurationExecutionTargetCMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-test" />
+  </component>
+  <component name="ProjectId" id="1fSpMCieNSpr84TJPWbJ0koAfeP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="CMAKE.AUTO_RELOAD_ENABLED" value="true" />
+    <property name="FullScreen" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="recentsLimit" value="5" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Task.F - String Cards">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="competitive_programming_cpp" TARGET_NAME="jhelper_example_project" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="output" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="competitive_programming_cpp" TARGET_NAME="output" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="competitive_programming_cpp" TARGET_NAME="test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testrunner" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="competitive_programming_cpp" TARGET_NAME="testrunner" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="competitive_programming_cpp" RUN_TARGET_NAME="testrunner">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="jhelper-example-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="jhelper-example-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="jhelper-example-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.output" />
+      <item itemvalue="CMake Application.test" />
+      <item itemvalue="CMake Application.testrunner" />
+      <item itemvalue="Task.F - Greedy Takahashi" />
+      <item itemvalue="Task.D - Takahashi Tour" />
+      <item itemvalue="Task.C - Made Up" />
+      <item itemvalue="Task.C - Friends and Travel costs" />
+      <item itemvalue="Task.A - Your First Judge" />
+      <item itemvalue="Task.B - log2(N)" />
+      <item itemvalue="Task.B - Job Assignment" />
+      <item itemvalue="Task.A - I Scream" />
+      <item itemvalue="Task.A1Chapter1" />
+      <item itemvalue="Task.E - Packing Under Range Regulations" />
+      <item itemvalue="Task.F - Substrings" />
+      <item itemvalue="Task.A - Distinct Strings" />
+      <item itemvalue="Task.B - Star or Not" />
+      <item itemvalue="Task.C - Calendar Validator" />
+      <item itemvalue="Task.D - Play Train" />
+      <item itemvalue="Task.E - フ" />
+      <item itemvalue="Task.F - String Cards" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="" />
+      <created>1497465170172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1497465170172</updated>
+      <workItem from="1596221300488" duration="50000" />
+      <workItem from="1596221367790" duration="407000" />
+      <workItem from="1596223347158" duration="62000" />
+      <workItem from="1599927394722" duration="1198000" />
+      <workItem from="1599982645589" duration="58682000" />
+      <workItem from="1600962204436" duration="25957000" />
+      <workItem from="1601725681348" duration="32614000" />
+      <workItem from="1602013220948" duration="60658000" />
+      <workItem from="1602527489827" duration="41663000" />
+      <workItem from="1605341407252" duration="18624000" />
+      <workItem from="1605959859789" duration="20577000" />
+      <workItem from="1606237012810" duration="5322000" />
+      <workItem from="1607169412842" duration="21310000" />
+      <workItem from="1607872964056" duration="5482000" />
+      <workItem from="1608827794306" duration="41620000" />
+      <workItem from="1610193260596" duration="19596000" />
+      <workItem from="1610797140153" duration="28311000" />
+      <workItem from="1612373689027" duration="16978000" />
+      <workItem from="1613819533276" duration="31893000" />
+      <workItem from="1614427170300" duration="36908000" />
+      <workItem from="1615128430741" duration="5989000" />
+      <workItem from="1615646823697" duration="6734000" />
+      <workItem from="1616779763178" duration="3754000" />
+      <workItem from="1618017017666" duration="5453000" />
+      <workItem from="1621010752183" duration="41671000" />
+      <workItem from="1621528703091" duration="24348000" />
+      <workItem from="1624124249880" duration="8514000" />
+      <workItem from="1624293314877" duration="32366000" />
+      <workItem from="1625398867205" duration="14810000" />
+      <workItem from="1627732780890" duration="11276000" />
+      <workItem from="1628686478034" duration="9526000" />
+      <workItem from="1629459893071" duration="24757000" />
+      <workItem from="1629800044624" duration="887000" />
+      <workItem from="1630087743583" duration="2331000" />
+      <workItem from="1634754468217" duration="5842000" />
+      <workItem from="1635601461332" duration="5388000" />
+      <workItem from="1635862658030" duration="1585000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2202" height="582" key="GridCell.Tab.0.bottom" timestamp="1635864229000">
+      <screen x="72" y="27" width="2488" height="1413" />
+    </state>
+    <state width="1125" height="659" key="GridCell.Tab.0.bottom/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
+    <state width="1351" height="659" key="GridCell.Tab.0.bottom/4000.470.2560.1440/0.497.1440.2063/1440.470.2560.1440@1440.470.2560.1440" timestamp="1630089334306" />
+    <state width="1351" height="582" key="GridCell.Tab.0.bottom/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287593" />
+    <state width="1351" height="685" key="GridCell.Tab.0.bottom/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
+    <state width="1351" height="685" key="GridCell.Tab.0.bottom/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
+    <state width="2202" height="582" key="GridCell.Tab.0.bottom/72.27.2488.1413@72.27.2488.1413" timestamp="1635864229000" />
+    <state width="2202" height="582" key="GridCell.Tab.0.center" timestamp="1635864228999">
+      <screen x="72" y="27" width="2488" height="1413" />
+    </state>
+    <state width="1125" height="659" key="GridCell.Tab.0.center/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
+    <state width="1351" height="659" key="GridCell.Tab.0.center/4000.470.2560.1440/0.497.1440.2063/1440.470.2560.1440@1440.470.2560.1440" timestamp="1630089334305" />
+    <state width="1351" height="582" key="GridCell.Tab.0.center/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287593" />
+    <state width="1351" height="685" key="GridCell.Tab.0.center/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
+    <state width="1351" height="685" key="GridCell.Tab.0.center/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
+    <state width="2202" height="582" key="GridCell.Tab.0.center/72.27.2488.1413@72.27.2488.1413" timestamp="1635864228999" />
+    <state width="2202" height="582" key="GridCell.Tab.0.left" timestamp="1635864228999">
+      <screen x="72" y="27" width="2488" height="1413" />
+    </state>
+    <state width="1125" height="659" key="GridCell.Tab.0.left/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
+    <state width="1351" height="659" key="GridCell.Tab.0.left/4000.470.2560.1440/0.497.1440.2063/1440.470.2560.1440@1440.470.2560.1440" timestamp="1630089334305" />
+    <state width="1351" height="582" key="GridCell.Tab.0.left/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287592" />
+    <state width="1351" height="685" key="GridCell.Tab.0.left/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
+    <state width="1351" height="685" key="GridCell.Tab.0.left/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
+    <state width="2202" height="582" key="GridCell.Tab.0.left/72.27.2488.1413@72.27.2488.1413" timestamp="1635864228999" />
+    <state width="2202" height="582" key="GridCell.Tab.0.right" timestamp="1635864228999">
+      <screen x="72" y="27" width="2488" height="1413" />
+    </state>
+    <state width="1125" height="659" key="GridCell.Tab.0.right/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642630062" />
+    <state width="1351" height="659" key="GridCell.Tab.0.right/4000.470.2560.1440/0.497.1440.2063/1440.470.2560.1440@1440.470.2560.1440" timestamp="1630089334305" />
+    <state width="1351" height="582" key="GridCell.Tab.0.right/4000.470.2560.1440/1440.470.2560.1440/0.497.1440.2063@1440.470.2560.1440" timestamp="1635612287593" />
+    <state width="1351" height="685" key="GridCell.Tab.0.right/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628698831087" />
+    <state width="1351" height="685" key="GridCell.Tab.0.right/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627833350751" />
+    <state width="2202" height="582" key="GridCell.Tab.0.right/72.27.2488.1413@72.27.2488.1413" timestamp="1635864228999" />
+    <state x="3149" y="1101" width="501" height="720" key="refactoring.ChangeSignatureDialog" timestamp="1629642034490">
+      <screen x="1440" y="724" width="2560" height="1440" />
+    </state>
+    <state x="3149" y="1101" width="501" height="720" key="refactoring.ChangeSignatureDialog/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629642034490" />
+    <state x="1598" y="349" width="674" height="680" key="search.everywhere.popup" timestamp="1635389657986">
+      <screen x="72" y="27" width="2488" height="1413" />
+    </state>
+    <state x="3010" y="1052" width="693" height="692" key="search.everywhere.popup/1440.724.2560.1440/4000.724.2560.1440/0.751.1440.1809@1440.724.2560.1440" timestamp="1629576190585" />
+    <state x="3010" y="798" width="693" height="692" key="search.everywhere.popup/4000.470.2560.1440/72.27.1368.1413/1440.470.2560.1440@1440.470.2560.1440" timestamp="1628693245111" />
+    <state x="1598" y="349" width="673" height="679" key="search.everywhere.popup/72.27.2488.1413/72.27.2488.1413@72.27.2488.1413" timestamp="1627736916402" />
+    <state x="1598" y="349" width="674" height="680" key="search.everywhere.popup/72.27.2488.1413@72.27.2488.1413" timestamp="1635389657986" />
+  </component>
+</project>

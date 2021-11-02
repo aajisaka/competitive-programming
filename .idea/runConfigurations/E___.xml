@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="E - フ" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="E" cppPath="tasks/E.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;1 1&#10;2 1&#10;1 2&#10;" output="2&#10;" active="true" />
+      <test input="10&#10;414598724 87552841&#10;252911401 309688555&#10;623249116 421714323&#10;605059493 227199170&#10;410455266 373748111&#10;861647548 916369023&#10;527772558 682124751&#10;356101507 249887028&#10;292258775 110762985&#10;850583108 796044319&#10;" output="10&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

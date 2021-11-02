@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="F - String Cards" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="FStringCards" cppPath="tasks/FStringCards.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4 3&#10;ode&#10;zaaa&#10;r&#10;atc&#10;" output="atcoder&#10;" active="true" />
+      <test input="5 2&#10;z&#10;z&#10;zzz&#10;z&#10;zzzzzz&#10;" output="zz&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
